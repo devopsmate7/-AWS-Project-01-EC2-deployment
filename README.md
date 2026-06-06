@@ -1,8 +1,32 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF9900,45:6D28D9,100:2563EB&height=190&section=header&text=AWS%20EC2%20Deployment&fontSize=42&fontColor=ffffff&animation=fadeIn" alt="AWS EC2 Deployment Banner" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AWS-EC2-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS EC2" />
+  <img src="https://img.shields.io/badge/Ubuntu-22.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" />
+  <img src="https://img.shields.io/badge/Apache2-Web%20Server-D22128?style=for-the-badge&logo=apache&logoColor=white" alt="Apache2" />
+  <img src="https://img.shields.io/badge/Project-01-6D28D9?style=for-the-badge" alt="Project 01" />
+</p>
+
 # Project 01 (AWS): Application Deployment on EC2
 
 Welcome to your first AWS hands-on project. In this project, you will create an Ubuntu EC2 server, deploy a simple website using Apache2, and access it from the browser using the public IP.
 
 > Goal: Learn the basic real-world flow: **create server → connect → deploy app → verify in browser**.
+
+---
+
+## Project Snapshot
+
+| Area | Details |
+|---|---|
+| Cloud | AWS |
+| Service | EC2 |
+| OS | Ubuntu Server 22.04 LTS |
+| Web Server | Apache2 |
+| Deployment | Clone repo and run one shell script |
+| Final Output | Website running on `http://<PUBLIC-IP>` |
 
 ## Agenda (What we will do)
 1. Create an **EC2 instance** (Linux) and open **HTTP (80)**.
@@ -30,6 +54,7 @@ This colorful architecture flow shows two important parts:
 ### EC2 Application Deployment Flow
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#efe7ff", "primaryBorderColor": "#6d28d9", "lineColor": "#2563eb", "fontFamily": "Inter, Arial", "tertiaryColor": "#fef3c7"}}}%%
 flowchart LR
   classDef user fill:#ffffff,stroke:#111827,stroke-width:1.5px,color:#111827;
   classDef aws fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#111827;
