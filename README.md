@@ -1,5 +1,9 @@
 # Project 01 (AWS): Application Deployment on EC2
 
+Welcome to your first AWS hands-on project. In this project, you will create an Ubuntu EC2 server, deploy a simple website using Apache2, and access it from the browser using the public IP.
+
+> Goal: Learn the basic real-world flow: **create server → connect → deploy app → verify in browser**.
+
 ## Agenda (What we will do)
 1. Create an **EC2 instance** (Linux) and open **HTTP (80)**.
 2. Connect using **either**:
@@ -18,6 +22,10 @@ After completing this project, you will be able to:
 ---
 
 ## Architecture
+
+This colorful architecture flow shows two important parts:
+- **User flow**: Browser request reaches EC2 and Apache returns the web page.
+- **Deployment flow**: Student clones the repo and runs the deployment script.
 
 ### EC2 Application Deployment Flow
 
@@ -54,6 +62,17 @@ flowchart LR
   class App app
   class Engineer,Repo,Script deploy
 ```
+
+---
+
+## Repository Files
+
+| File | Purpose |
+|---|---|
+| `README.md` | Step-by-step project blog |
+| `index.html` | Sample website page |
+| `styles.css` | Website styling |
+| `deploy-ec2-apache.sh` | Installs Apache2 and deploys files to `/var/www/html` |
 
 ---
 
@@ -116,7 +135,7 @@ After connecting (Option A or B), you will be in a terminal on the EC2 server.
    ```
 3. Clone the repo directly into this folder (clone contents into the current directory):
    ```bash
-   git clone REPO_URL_HERE .
+   git clone https://github.com/devopsmate7/-AWS-Project-01-EC2-deployment.git .
    ```
 4. Requirements for this project:
    - Your repo root should contain web files like `index.html` (and optional CSS/assets).
